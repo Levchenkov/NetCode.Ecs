@@ -1,0 +1,28 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCode.Ecs", "NetCode.Ecs\NetCode.Ecs.csproj", "{A6A1AAFC-3BA7-4F11-9168-AF88E031897B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCode.Ecs.Demo", "NetCode.Ecs.Demo\NetCode.Ecs.Demo.csproj", "{A4CE705F-DCDC-4BA4-AA32-28B69E4F2C93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCode.Ecs.Benchmarks", "NetCode.Ecs.Benchmarks\NetCode.Ecs.Benchmarks.csproj", "{6EA75DE5-B983-4DAE-B6E9-6DC2AC01D341}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6A1AAFC-3BA7-4F11-9168-AF88E031897B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6A1AAFC-3BA7-4F11-9168-AF88E031897B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6A1AAFC-3BA7-4F11-9168-AF88E031897B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6A1AAFC-3BA7-4F11-9168-AF88E031897B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4CE705F-DCDC-4BA4-AA32-28B69E4F2C93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4CE705F-DCDC-4BA4-AA32-28B69E4F2C93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4CE705F-DCDC-4BA4-AA32-28B69E4F2C93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4CE705F-DCDC-4BA4-AA32-28B69E4F2C93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EA75DE5-B983-4DAE-B6E9-6DC2AC01D341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EA75DE5-B983-4DAE-B6E9-6DC2AC01D341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EA75DE5-B983-4DAE-B6E9-6DC2AC01D341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EA75DE5-B983-4DAE-B6E9-6DC2AC01D341}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
