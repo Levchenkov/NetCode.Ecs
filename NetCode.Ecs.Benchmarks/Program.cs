@@ -1,9 +1,8 @@
 // See https://aka.ms/new-console-template for more information
 
+using System.Reflection;
 using BenchmarkDotNet.Running;
 using NetCode.Ecs.Benchmarks;
 
-BenchmarkRunner.Run<CompareBenchmark>();
+BenchmarkSwitcher.FromAssembly(Assembly.GetCallingAssembly()).Run();
 
-// var compareBenchmark = new CompareBenchmark();
-// compareBenchmark.NetCodeEcs();
