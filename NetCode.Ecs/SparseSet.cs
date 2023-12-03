@@ -2,7 +2,7 @@ using System.Runtime.CompilerServices;
 
 namespace NetCode.Ecs;
 
-public class SparseSet<T>
+public sealed class SparseSet<T>
     where T : struct
 {
     private const int InvalidIndex = -1;
@@ -22,10 +22,10 @@ public class SparseSet<T>
         get => _denseSet.Entities;
     }
 
-    public SparseSet(int maxEntitiesCount, int maxComponentsPerSet)
+    public SparseSet(int maxEntitiesCount, int maxComponentsPerType)
     {
         _indexes = new int[maxEntitiesCount];
-        _denseSet = new DenseSet<T>(maxComponentsPerSet);
+        _denseSet = new DenseSet<T>(maxComponentsPerType);
 
         for (int i = 0; i < maxEntitiesCount; i++)
         {
@@ -38,6 +38,7 @@ public class SparseSet<T>
         return _indexes[entityId.Id] != InvalidIndex;
     }
 
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public ref T GetComponent(EntityId entityId)
     {
         var index = _indexes[entityId.Id];

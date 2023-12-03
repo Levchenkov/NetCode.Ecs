@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCode.Ecs.Demo", "NetCode
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCode.Ecs.Benchmarks", "NetCode.Ecs.Benchmarks\NetCode.Ecs.Benchmarks.csproj", "{6EA75DE5-B983-4DAE-B6E9-6DC2AC01D341}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCode.Ecs.UnitTests", "NetCode.Ecs.UnitTests\NetCode.Ecs.UnitTests.csproj", "{F4C00A13-1B2E-4F22-889E-5CBB95B8B5B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{6EA75DE5-B983-4DAE-B6E9-6DC2AC01D341}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EA75DE5-B983-4DAE-B6E9-6DC2AC01D341}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EA75DE5-B983-4DAE-B6E9-6DC2AC01D341}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4C00A13-1B2E-4F22-889E-5CBB95B8B5B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4C00A13-1B2E-4F22-889E-5CBB95B8B5B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4C00A13-1B2E-4F22-889E-5CBB95B8B5B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4C00A13-1B2E-4F22-889E-5CBB95B8B5B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

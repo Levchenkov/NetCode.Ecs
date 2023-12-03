@@ -5,7 +5,6 @@ using NetCode.Ecs;
 Console.WriteLine("Hello, World!");
 
 // todo: make resizable
-// todo: bench linked vs array ? Some blogger told that it is the same
 
 var world = new World();
 world.InitSparseSetFor<Health>();
@@ -20,6 +19,7 @@ systemCollection.Add(new DamageSystem());
 systemCollection.Init(world);
 
 systemCollection.Update();
+
 
 public sealed class RegenHealthSystem : IInitializableSystem, IUpdatableSystem
 {
@@ -108,4 +108,11 @@ public struct Damage
 public struct Dead
 {
     public EntityId KillerId;
+}
+
+public struct Position
+{
+    public int X;
+    public int Y;
+    public int Z;
 }

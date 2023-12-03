@@ -4,10 +4,10 @@ namespace NetCode.Ecs;
 
 public class World : IWorld
 {
-    public const int MaxEntitiesCount = ushort.MaxValue;
+    private const int MaxEntitiesCount = EntityId.MaxEntitiesCount;
 
     public const int MaxComponentsPerSet = ushort.MaxValue;
-    
+
     private readonly Dictionary<Type, object> _sets;
 
     public World()
@@ -16,13 +16,13 @@ public class World : IWorld
     }
 
     public void InitSparseSetFor<T>() where T : struct => InitSparseSetFor<T>(MaxEntitiesCount, MaxComponentsPerSet);
-    
-    public void InitSparseSetFor<T>(int maxEntitiesCount, int maxComponentsPerSet)
+
+    public void InitSparseSetFor<T>(int maxEntitiesCount, int maxComponentsPerType)
         where T : struct
     {
         var key = typeof(T);
 
-        _sets[key] = new SparseSet<T>(maxEntitiesCount, maxComponentsPerSet);
+        _sets[key] = new SparseSet<T>(maxEntitiesCount, maxComponentsPerType);
     }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
